@@ -19,6 +19,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true, // oxiridan yana boshiga qaytadi
+      autoplay: {
+        delay: 3000, // 3 sekundda almashadi
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
   <body>
     <div class="navbar_frame">
       <div class="container">
@@ -228,7 +241,7 @@
       </div>
 
       <div class="selling_product_frame">
-        <div class="container">
+        <div class="container swiper">
           <div class="category_top">
             <span>Top Selling products</span>
             <a href="">View All </a>
@@ -237,8 +250,8 @@
             <div class="next_prev_box">
               <img src="public/css/icons/next.svg" alt="" />
             </div>
-            <div class="product_boxes">
-              <div class="product_box">
+            <div class="product_boxes swiper-wrapper">
+              <div class="product_box swiper-slide">
                 <a href="">
                   <div
                     class="product_img_box"
@@ -273,7 +286,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product_box">
+              <div class="product_box swiper-slide">
                 <a href="">
                   <div
                     class="product_img_box"
@@ -308,7 +321,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product_box">
+              <div class="product_box swiper-slide">
                 <a href="">
                   <div
                     class="product_img_box"
@@ -343,7 +356,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product_box">
+              <div class="product_box swiper-slide">
                 <a href="">
                   <div
                     class="product_img_box"
@@ -474,6 +487,25 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="public/css/products/dyson.png" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="public/css/products/dyson.png" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="public/css/products/dyson.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Dotlar -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </body>

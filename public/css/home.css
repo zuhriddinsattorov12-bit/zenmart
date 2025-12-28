@@ -1,5 +1,4 @@
 .home_page {
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -778,7 +777,7 @@
   justify-content: center;
 }
 
-.tv_wrapper .next_prev_box {
+.tv_frame .tv_wrapper .next_prev_box {
   padding-top: 80px;
 }
 
@@ -822,6 +821,7 @@
   justify-content: center;
 
   background-image: url(../css/icons/event_bg.png);
+  background-size: cover;
 }
 
 .event_frame .container {
@@ -829,7 +829,7 @@
   justify-content: center;
 }
 
-.container .event_content_box {
+.event_frame .container .event_content_box {
   width: 348px;
   height: auto;
 
@@ -838,7 +838,7 @@
   justify-content: center;
 }
 
-.event_content_box .event_title {
+.event_frame .event_content_box .event_title {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -848,13 +848,13 @@
   color: #ffffff;
 }
 
-.event_content_box .timer_wrapper {
+.event_frame .event_content_box .timer_wrapper {
   margin: 30px 0;
   display: flex;
   flex-direction: row;
 }
 
-.timer_wrapper .timer_box {
+.event_frame .timer_wrapper .timer_box {
   width: 83px;
   height: auto;
 
@@ -862,7 +862,7 @@
   flex-direction: column;
 }
 
-.timer_box strong {
+.event_frame .timer_box strong {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -872,7 +872,7 @@
   color: #ffffff;
 }
 
-.timer_box span {
+.event_frame .timer_box span {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -882,7 +882,7 @@
   color: #ffffff;
 }
 
-.event_content_box a {
+.event_frame .event_content_box a {
   width: 140px;
   height: 50px;
 
@@ -905,7 +905,7 @@
   color: #041e42;
 }
 
-.container .event_product_wrapper {
+.event_frame .container .event_product_wrapper {
   width: 930px;
   height: auto;
 
@@ -913,11 +913,11 @@
   flex-direction: row;
 }
 
-.event_product_wrapper .next_prev_box {
+.event_frame .event_product_wrapper .next_prev_box {
   padding-top: 300px;
 }
 
-.event_product_wrapper .event_product_boxes {
+.event_frame .event_product_wrapper .event_product_boxes {
   position: relative;
   width: auto;
   height: auto;
@@ -927,7 +927,7 @@
   align-items: center;
 }
 
-.event_product_boxes .event_product_box {
+.event_frame .event_product_boxes .event_product_box {
   margin-right: 8px;
   width: 205px;
   height: 392px;
@@ -938,7 +938,7 @@
   background-color: #ffffff;
 }
 
-.event_product_box .event_product_img {
+.event_frame .event_product_box .event_product_img {
   width: 100%;
   height: 220px;
 
